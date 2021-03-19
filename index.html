@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Kalkulátor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="jumbotron-fluid p-5">
+        <h1 class="text-black text-center display-2">Kalkulátor</h1>
+    </header>
+    <main class="container">
+        <h2 class="text-white text-uppercase text-center p-4 mt-3">Kalkulačka pro výpočet paliva</h2>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Menu</label>
+                    <div class="col-sm-9">
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="shape" id="gas" value="gas"> Výpočet průměrné spotřeby paliva
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="shape" id="tank" value="tank"> Výpočet tankování nádrže
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="shape" id="trip" value="trip"> Výpočet ceny plánované cesty
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row" id="xdiv">
+                    <label for="x" class="col-sm-3 col-form-label" id="promX">Zde zadej X</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="x" id="x" 
+                        placeholder="Zde zadej číslo">
+                    </div>
+                </div>
+                <div class="form-group row" id="ydiv">
+                    <label for="y" class="col-sm-3 col-form-label" id="promY">Zde zadej Y</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="y" id="y" 
+                        placeholder="Zde zadej číslo">
+                    </div>
+                </div>
+                <div class="form-group row" id="zdiv">
+                    <label for="z" class="col-sm-3 col-form-label" id="promZ">Zde zadej Z</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="z" id="z" 
+                        placeholder="Zde zadej číslo">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-10">
+                        <button type="button" class="button" id="button">Vypočti</button>
+                    </div>
+                </div>
+            </form>
+            <div id="result" class="display-4"><hr style="font-size:40px">Výsledek</div>
+        </div>
+    </main>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

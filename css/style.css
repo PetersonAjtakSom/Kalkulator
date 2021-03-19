@@ -1,0 +1,23 @@
+header{
+    background-color:rgb(21, 157, 211);
+  }
+body {
+    background-color: rgb(255, 255, 255);
+ }
+    
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+    
+h2{
+    background-color:rgb(7, 137, 146);
+}
+  
+.button {
+    background-color: #0ae90a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+}
